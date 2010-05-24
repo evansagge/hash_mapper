@@ -16,21 +16,21 @@ Gem::Specification.new do |s|
     "README.rdoc"
   ]
   s.files = [
-    "HashMapper.gemspec",
-     "History.txt",
-     "Manifest.txt",
-     "PostInstall.txt",
-     "README.rdoc",
-     "Rakefile",
-     "VERSION",
-     "lib/hash_mapper.rb",
-     "script/console",
-     "script/destroy",
-     "script/generate",
-     "spec/hash_mapper_spec.rb",
-     "spec/spec.opts",
-     "spec/spec_helper.rb",
-     "tasks/rspec.rake"
+    "hash_mapper.gemspec",
+    "History.txt",
+    "Manifest.txt",
+    "PostInstall.txt",
+    "README.rdoc",
+    "Rakefile",
+    "VERSION",
+    "lib/hash_mapper.rb",
+    "script/console",
+    "script/destroy",
+    "script/generate",
+    "spec/hash_mapper_spec.rb",
+    "spec/spec.opts",
+    "spec/spec_helper.rb",
+    "tasks/rspec.rake"
   ]
   s.homepage = %q{http://github.com/ismasan/hash_mapper}
   s.rdoc_options = ["--charset=UTF-8"]
