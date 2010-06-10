@@ -35,14 +35,15 @@ end
 
 module HashMapper
 
+  # radamanthus: If you don't need this, disabling this gives a 3x performance boost
   # we need this for inheritable mappers, which is annoying because it needs ActiveSupport, kinda overkill.
   #
-  def self.extended(base)
-    base.class_eval do
-      write_inheritable_attribute :maps, []
-      class_inheritable_accessor :maps
-    end
-  end
+  # def self.extended(base)
+  #   base.class_eval do
+  #     write_inheritable_attribute :maps, []
+  #     class_inheritable_accessor :maps
+  #   end
+  # end
 
   def map(from, to, using=nil, &filter)
     self.maps << Map.new(from, to, using)
